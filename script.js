@@ -17,3 +17,19 @@ botao.innerText = 'Jogar!'
 botao.onclick = function() {
     jogar()
 }
+jogo.style.display = 'none'
+gif.style.display = 'none'
+
+function add() {
+    if (nome1.value && nome2.value) {
+        item1.innerText = 'Jogador 1: ' + (nome1).value
+        item2.innerText = 'Jogador 2: ' + (nome2).value
+        div.appendChild(item1)
+        div.appendChild(item2)
+        div.appendChild(botao)
+    } else {
+        alert('Digite os nomes dos jogadores!')
+    }
+
+    
+}

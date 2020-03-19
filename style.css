@@ -25,3 +25,26 @@ body {
 label {
     margin-bottom: 1px;
 }
+
+.btn-success {
+    float: right;
+}
+
+.btn-primary {
+    float: right;
+}
+
+#teste {
+    border: solid 1px black;
+    width: 20em;
+    height: 10.8em;
+    margin: auto;
+    padding: 5px;
+    margin-top: 3em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+}
