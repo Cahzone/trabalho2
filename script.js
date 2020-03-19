@@ -30,6 +30,8 @@ function add() {
     } else {
         alert('Digite os nomes dos jogadores!')
     }
+    // nome1.value = ''
+    // nome2.value = ''
 }
 
 function jogar() {
@@ -66,5 +68,25 @@ function somar(valor) {
             btn2.setAttribute("disabled", 'true')
             btn3.setAttribute("disabled", 'true')
     }
-    
+    if (soma1 < 21) {
+        if (jogadorAtual == nome1.value) {
+            jogadorAtual = nome2.value
+        } else {
+            jogadorAtual = nome1.value
+        }
+        // alert(jogadorAtual)
+        if (soma1 !== 1) {
+            return document.getElementById('valorAtual').innerHTML = `Jogador(a) ${jogadorAtual} fez até o momento: ${soma1} pontos. Proximo Jogador`
+        } else {
+            return document.getElementById('valorAtual').innerHTML = `Jogador(a) ${jogadorAtual} fez até o momento: ${soma1} ponto. Proximo Jogador`
+        }
+    } else {
+        gif.style.display = 'block'
+        document.getElementById('valorAtual').innerHTML = `O vencedor é Jogador ${vencedor}, com ${soma1} pontos`
+        btn1.setAttribute("disabled", 'true')
+        btn2.setAttribute("disabled", 'true')
+        btn3.setAttribute("disabled", 'true')
+    }
+    btn1.setAttribute('disabled')
+
 }
