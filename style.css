@@ -48,3 +48,27 @@ label {
 h3 {
     text-align: center;
 }
+
+#jogo {
+    margin: 0 auto;
+    border: solid 1px black;
+    width: 32.6em;
+    padding: 5px;
+    border-radius: 5px;
+    height: 30em;
+    text-align: center;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camposJogadores {
+    margin-top: 10px;
+}
+
+#botoes {
+    position: relative;
+}

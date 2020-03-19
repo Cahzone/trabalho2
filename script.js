@@ -30,6 +30,41 @@ function add() {
     } else {
         alert('Digite os nomes dos jogadores!')
     }
+}
 
+function jogar() {
+    divPai.style.display = 'none';
+    jogo.style.display = 'block'
+}
+let soma1 = 0
+var contador = 0
+var jogadorAtual = nome2.value
+
+function somar(valor) {
+    contador++
+    let vencedor
+    if (contador % 2 == 0) {
+        vencedor = nome2.value
+
+    } else {
+        vencedor = nome1.value
+    }
+
+    function somar(valor) {
+        let soma = 0
+        if (soma < 21) {
+            let a = document.getElementById('valorAtual').innerHTML = soma = +valor
+        }
+    }
+
+    soma1 += valor
+    switch (soma1) {
+        case 19:
+            btn3.setAttribute("disabled", 'true');
+            break;
+        case 20:
+            btn2.setAttribute("disabled", 'true')
+            btn3.setAttribute("disabled", 'true')
+    }
     
 }
