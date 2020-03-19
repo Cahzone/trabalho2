@@ -1,0 +1,27 @@
+#jogador1 {
+    width: 15em;
+}
+
+#jogador2 {
+    width: 15em;
+}
+
+body {
+    padding: 30px;
+}
+
+#corpo {
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 30em;
+    margin: auto;
+    margin-top: 2em;
+    color: white;
+    height: 18em;
+    padding: 10px;
+    background-color: rgb(55, 149, 212);
+}
+
+label {
+    margin-bottom: 1px;
+}
